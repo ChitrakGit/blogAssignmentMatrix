@@ -88,7 +88,7 @@ const Dashboard: React.FC = () => {
               idx === index
                 ? {
                     ...item,
-                    comments: [...item.comments, commentText],
+                    comments: [...item.comments, {comment:commentText}],
                     comment: "", // Clear input after adding
                   }
                 : item
